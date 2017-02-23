@@ -8,7 +8,7 @@ package multithreading;
  *
  *
  */
-public class CostomThreadExplaingingDeadLock_13 {
+public class CustomThreadExplaingingDeadLock_13 {
 
     public static void main(String[] args) {
 

@@ -17,13 +17,16 @@ public class CustomThreadExplainingThreadAPI_step17 extends Thread {
 
     @Override
     public void run() {
-        try{
+        try {
             Thread.sleep(1000);
             System.out.println("task");
 
-        }catch(InterruptedException e){
-            throw new RuntimeException("Thread interrupted..."+e);
+        } catch (InterruptedException e) {
+            System.out.println("Exception handling mechnism , no runtime exception is thrown , " +
+                    "so that thread continue to work, after interrupt method call");
         }
+
+        System.out.println("The thread is running..... ");
     }
 
     public static void main(String[] args) {
@@ -31,13 +34,10 @@ public class CustomThreadExplainingThreadAPI_step17 extends Thread {
 
         thread3.start();
 /*
- after interrupting the thread it will stop working.
+ after interrupting the thread it will not  stop working as the Interrupted exception is caught and handlen in run method.
  */
-        try{
-            thread3.interrupt();
-        }catch(Exception e){
-            System.out.println("Exception handled "+e);}
+        thread3.interrupt();
+
 
     }
-
 }

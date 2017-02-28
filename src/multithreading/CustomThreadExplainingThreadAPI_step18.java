@@ -17,13 +17,13 @@ public class CustomThreadExplainingThreadAPI_step18 extends Thread {
 
     @Override
     public void run() {
-        try{
-            Thread.sleep(1000);
-            System.out.println("task");
 
-        }catch(InterruptedException e){
-            throw new RuntimeException("Thread interrupted..."+e);
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
         }
+        System.out.println("task");
+
+
     }
 
     public static void main(String[] args) {
@@ -31,13 +31,11 @@ public class CustomThreadExplainingThreadAPI_step18 extends Thread {
 
         thread3.start();
 /*
- after interrupting the thread it will stop working.
+ if thread is not in sleeping or waiting state, calling the interrupt() method sets the interrupted flag to true
+ that can be used to stop the thread by the java programmer later..
  */
-        try{
-            thread3.interrupt();
-        }catch(Exception e){
-            System.out.println("Exception handled "+e);}
+
+        thread3.interrupt();
 
     }
-
 }

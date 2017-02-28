@@ -2,6 +2,8 @@ package multithreading;
 
 /**
  * Created by varduhis on 2/22/2017.
+
+ *
  */
 public class CustomThreadExplainingThreadAPI_step14 extends Thread {
 
@@ -23,8 +25,8 @@ public class CustomThreadExplainingThreadAPI_step14 extends Thread {
     }
 
     public static void main(String[] args) {
-        CustomThreadExplainingThreadAPI_step14 thread1 = new CustomThreadExplainingThreadAPI_step14("Thread1");
-        CustomThreadExplainingThreadAPI_step14 thread2 = new CustomThreadExplainingThreadAPI_step14("Thread2");
+        CustomThreadExplainingThreadAPI_step14 thread1 = new CustomThreadExplainingThreadAPI_step14("CustomThreadExplainingUnsyncMethodCallOFSharedObject_1");
+        CustomThreadExplainingThreadAPI_step14 thread2 = new CustomThreadExplainingThreadAPI_step14("CustomThreadExplainingUnsyncMethodCallOFSharedObject_2");
         CustomThreadExplainingThreadAPI_step14 thread3 = new CustomThreadExplainingThreadAPI_step14("Thread3");
 
         thread1.start();

@@ -10,7 +10,7 @@ public class Felin extends Animal {
         this.type = type;
         this.location = location;
     }
-
+public Felin(){}
     @Override
     public void eat() {
         System.out.println(this.type+ " is eating meat");

@@ -13,6 +13,8 @@ public class Dog extends Canin implements Domestic {
 
     }
 
+    public Dog(){}
+
     @Override
     public void play() {
         System.out.println(this.type+ " "+ this.name+ " is playing");

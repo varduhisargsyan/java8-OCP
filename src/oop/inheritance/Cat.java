@@ -12,7 +12,7 @@ public class Cat extends Felin implements Domestic{
         this.owner = owner;
 
     }
-
+public Cat(){}
     @Override
     public void play() {
         System.out.println(this.type+ " "+ this.name+ " is playing");

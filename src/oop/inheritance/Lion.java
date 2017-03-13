@@ -9,7 +9,9 @@ public class Lion extends Canin implements Wild {
     public Lion(String name, String type, String location) {
         super(name, type, location);
     }
+    public Lion(){
 
+    }
 
     @Override
     public void roam() {

@@ -18,7 +18,7 @@ import oop.inheritance.*;
  * the variable is declared as an interface type, it can reference any object of any
  * class that implements the interface.
  */
-public class CastingTest {
+public class CastingTest_2 {
     public static void main(String[] args) {
 
         Lion lion = new Lion();

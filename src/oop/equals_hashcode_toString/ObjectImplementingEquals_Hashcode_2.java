@@ -3,13 +3,13 @@ package oop.equals_hashcode_toString;
 /**
  * Created by varduhis on 3/14/2017.
  */
-public class ObjectImplementingEquals_Hashcode {
+public class ObjectImplementingEquals_Hashcode_2 {
 
     private int field1;
     private int field2;
     private String field3;
 
-    public ObjectImplementingEquals_Hashcode(int field1, int field2, String field3) {
+    public ObjectImplementingEquals_Hashcode_2(int field1, int field2, String field3) {
         this.field1 = field1;
         this.field2 = field2;
         this.field3 = field3;
@@ -18,7 +18,7 @@ public class ObjectImplementingEquals_Hashcode {
     /**
      * Java uses == to compare primitives and for checking if two variables refer
      * to the same object.
-     * the method signature : It takes an Object as the method parameter rather than a ObjectImplementingEquals_Hashcode.
+     * the method signature : It takes an Object as the method parameter rather than a ObjectImplementingEquals_Hashcode_2.
      * <p>
      * The equals() method implements an equivalence relation on non‐null object references:
      * <p>
@@ -41,15 +41,15 @@ public class ObjectImplementingEquals_Hashcode {
 
     @Override
     public boolean equals(Object o) {
-        //this and o refere to the same object ex . ObjectImplementingEquals_Hashcode obj=new ObjectImplementingEquals_Hashcode(); Object o=obj;
+        //this and o refere to the same object ex . ObjectImplementingEquals_Hashcode_2 obj=new ObjectImplementingEquals_Hashcode_2(); Object o=obj;
         if (this == o) return true;
 
-        //obviously this is an instance of ObjectImplementingEquals_Hashcode, but the object passed to  equals can be any type
-        //if not instanceof ObjectImplementingEquals_Hashcode equaliyy fails
+        //obviously this is an instance of ObjectImplementingEquals_Hashcode_2, but the object passed to  equals can be any type
+        //if not instanceof ObjectImplementingEquals_Hashcode_2 equaliyy fails
 
-        if (!(o instanceof ObjectImplementingEquals_Hashcode)) return false;
+        if (!(o instanceof ObjectImplementingEquals_Hashcode_2)) return false;
 
-        ObjectImplementingEquals_Hashcode that = (ObjectImplementingEquals_Hashcode) o;
+        ObjectImplementingEquals_Hashcode_2 that = (ObjectImplementingEquals_Hashcode_2) o;
 
         // Passing to the field check one by one
         //check primitive fields first.
@@ -86,9 +86,9 @@ public class ObjectImplementingEquals_Hashcode {
 
     public static void main(String[] args) {
 
-        ObjectImplementingEquals_Hashcode obj1 = new ObjectImplementingEquals_Hashcode(10, 20, "F3");
-        ObjectImplementingEquals_Hashcode obj2 = new ObjectImplementingEquals_Hashcode(10, 20, "F3");
-        ObjectImplementingEquals_Hashcode obj3 = new ObjectImplementingEquals_Hashcode(10, 20, "F3");
+        ObjectImplementingEquals_Hashcode_2 obj1 = new ObjectImplementingEquals_Hashcode_2(10, 20, "F3");
+        ObjectImplementingEquals_Hashcode_2 obj2 = new ObjectImplementingEquals_Hashcode_2(10, 20, "F3");
+        ObjectImplementingEquals_Hashcode_2 obj3 = new ObjectImplementingEquals_Hashcode_2(10, 20, "F3");
 
         System.out.println( "obj1 equals to obj2 "+ obj1.equals(obj2));
         System.out.println( "obj2 equals to obj3 "+ obj2.equals(obj3));

@@ -3,12 +3,12 @@ package oop.enum_test;
 /**
  * Created by varduhis on 3/15/2017.
  */
-public class Enum_API {
+public class Enum_API_3 {
 
     public static void main(String[] args) {
 
-        //ENUM is a set of constants Season.values() return Season[]
-        for (Season s : Season.values()) {
+        //ENUM is a set of constants Season_1.values() return Season_1[]
+        for (Season_1 s : Season_1.values()) {
 
             System.out.println("enum "+ s); // prints enum constant
 
@@ -19,7 +19,7 @@ public class Enum_API {
         }
 
         //create an enum from a String.
-        Season s = Season.valueOf("FALL");
+        Season_1 s = Season_1.valueOf("FALL");
 
 
     }

@@ -3,7 +3,7 @@ package oop.enum_test;
 /**
  * Created by varduhis on 3/15/2017.
  */
-public class TransactionReport {
+public class TransactionReport_4_2 {
     private int reportId;
     private String personName;
     private int amount;
@@ -52,7 +52,7 @@ public class TransactionReport {
 
     @Override
     public String toString() {
-        return "TransactionReport{" +
+        return "TransactionReport_4_2{" +
                 "reportId=" + reportId +
                 ", personName='" + personName + '\'' +
                 ", amount=" + amount +

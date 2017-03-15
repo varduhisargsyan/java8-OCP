@@ -1,4 +1,4 @@
-package inaction.ch5;
+package functionalProgramming.ch5;
 
 public class Trader {
 	

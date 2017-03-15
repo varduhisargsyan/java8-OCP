@@ -3,7 +3,7 @@ package oop.polymorphism.instanceof_test;
 /**
  * Created by varduhis on 3/13/2017.
  */
-public class InstanceofTest {
+public class InstanceofTest_1 {
     public static void main(String[] args) {
         /**
          * The variable reference is HeavyAnimal, so there could

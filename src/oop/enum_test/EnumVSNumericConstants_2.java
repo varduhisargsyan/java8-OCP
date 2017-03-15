@@ -9,7 +9,7 @@ package oop.enum_test;
  * runtime. With enums, it is impossible to create an invalid enum type without introducing a
  * compiler error.
  */
-public class EnumVSNumericConstants {
+public class EnumVSNumericConstants_2 {
     //Constants
     public static final String SUMMER = "SUMMER";
     public static final String WINTER = "WITHER";
@@ -24,23 +24,23 @@ public class EnumVSNumericConstants {
         }
 
         //compiler does not accept invalid String as "sumer" is not type ENUM
-        /**  if(Season.SUMMER=="sumer"){
+        /**  if(Season_1.SUMMER=="sumer"){
 
          }*/
 
         //compiler does not accept invalid ENUM.OTHER
-        /**   if (Season.WITHER == Season.OTHER) {
+        /**   if (Season_1.WITHER == Season_1.OTHER) {
 
          }
          */
 
-        Season s1 = Season.valueOf("SUMMER"); // SUMMER
-        Season s2 = Season.valueOf("summer"); // exception
+        Season_1 s1 = Season_1.valueOf("SUMMER"); // SUMMER
+        Season_1 s2 = Season_1.valueOf("summer"); // exception
     }
 
 
     public static void enumInSwitch() {
-        Season s = Season.SPRING; // is of type Season
+        Season_1 s = Season_1.SPRING; // is of type Season_1
 
 
         switch (s) {

@@ -4,7 +4,7 @@ package oop.enum_test;
  * Created by varduhis on 3/15/2017.
  */
 
-public enum BrandEnum {
+public enum BrandEnum_4 {
     // enum instances with constructor call
     BANC("Bancontact"), VPAY("VPAY"), MSTR("Maestro"), VISA("Visa"), MCRD("MasterCard"), DIN("Diners"), UNPA("UnionPay");
 
@@ -14,7 +14,7 @@ public enum BrandEnum {
 
     // Enum constructor by default is PRIVATE , all enum instances must be  declared in the same class as enum
     //For each enum instance the constructor is called only once
-    BrandEnum(String value) {
+    BrandEnum_4(String value) {
 
         this.valueWs = value;
         System.out.println("Constructing " + valueWs);
@@ -23,7 +23,7 @@ public enum BrandEnum {
     //Method returns the String value of Enum passed to the method
     public static String getValue(Enum forEnum) {
         String retVal = "";
-        for (final BrandEnum en : BrandEnum.values()) {
+        for (final BrandEnum_4 en : BrandEnum_4.values()) {
             if (en != null && en.equals(forEnum)) {
                 retVal = en.valueWs;
                 break;

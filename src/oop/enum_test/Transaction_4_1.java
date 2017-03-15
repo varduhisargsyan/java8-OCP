@@ -3,11 +3,11 @@ package oop.enum_test;
 /**
  * Created by varduhis on 3/15/2017.
  */
-public class Transaction {
+public class Transaction_4_1 {
     private int id;
     private int amount;
     private long ccNumber;
-    private BrandEnum brand;
+    private BrandEnum_4 brand;
 
 
 
@@ -35,18 +35,18 @@ public class Transaction {
         this.ccNumber = ccNumber;
     }
 
-    public BrandEnum getBrand() {
+    public BrandEnum_4 getBrand() {
         return brand;
     }
 
-    public void setBrand(BrandEnum brand) {
+    public void setBrand(BrandEnum_4 brand) {
         this.brand = brand;
     }
 
 
     @Override
     public String toString() {
-        return "Transaction{" +
+        return "Transaction_4_1{" +
                 "id=" + id +
                 ", amount=" + amount +
                 ", ccNumber=" + ccNumber +

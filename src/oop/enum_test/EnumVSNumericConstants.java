@@ -39,6 +39,21 @@ public class EnumVSNumericConstants {
     }
 
 
+    public static void enumInSwitch() {
+        Season s = Season.SPRING; // is of type Season
+
+
+        switch (s) {
+            case FALL:
+                System.out.print("Fall is coming in yerevan");
+                break;
+            case SUMMER:
+                System.out.print("Fall is coming in yerevan");
+                break;
+            //  case 0:System.out.print("DOES NOT COMPILE"); break;
+
+        }
+    }
 
     public static void main(String[] args) {
 

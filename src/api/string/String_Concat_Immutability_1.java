@@ -10,7 +10,7 @@ public class String_Concat_Immutability_1 {
         Once a String object is created, it is not allowed to change. It cannot be made larger or
             smaller, and you cannot change one of the characters inside it.
      */
-    private String str="initial str";
+    private String str = "initial str";
 
     public String getStr() {
         return str;
@@ -43,17 +43,31 @@ public class String_Concat_Immutability_1 {
 
 
          */
-        String name_2="Fluffy"; // for name_2  "Fluffy" is reused
+        String name_2 = "Fluffy"; // for name_2  "Fluffy" is reused
+/*
+        2.1  String Equality
 
+ */
+        String x = "Hello World";
+        String y = "Hello World";
+        System.out.println(x == y); // true
+
+        String z=" Hello World".trim();  //any operation with string literal results to  String object creation
+        /*
+        In this example, we don’t have two of the same String literal. Although x and z happen
+         to evaluate to the same string, one is computed at runtime. Since it isn’t the same at
+         compile-time, a new String object is created.
+         */
+        System.out.println(x==z); // false
 
         /**
          * 3. Concatenation
          *
          * Placing one String before the other String and combining them together is called string
-             concatenation.  the + operator can be used in two ways within the same line of code.
-            Rules:
-            1. If both operands are numeric, + means numeric addition.
-            2. If either operand is a String, + means concatenation.
+         concatenation.  the + operator can be used in two ways within the same line of code.
+         Rules:
+         1. If both operands are numeric, + means numeric addition.
+         2. If either operand is a String, + means concatenation.
          3. The expression is evaluated left to right.
          *
          */
@@ -65,11 +79,11 @@ public class String_Concat_Immutability_1 {
         /*
         what += does. s += "2" means the same thing as s =s+"2"
          */
-        String s="1"; //holds 1
-        s+=2; // holds 12
-        s+=6; //holds 126
+        String s = "1"; //holds 1
+        s += 2; // holds 12
+        s += 6; //holds 126
 
-        String_Concat_Immutability_1 obj=new String_Concat_Immutability_1();
+        String_Concat_Immutability_1 obj = new String_Concat_Immutability_1();
         /*
          even though the String class is immutable it can be still used in mutable class
          String_Concat_Immutability_1 is mutable by calling setter on obj.str we actually change the reference str to point to another object
@@ -77,10 +91,6 @@ public class String_Concat_Immutability_1 {
 
          */
         obj.setStr("Another string object ");
-
-
-
-
 
 
     }
